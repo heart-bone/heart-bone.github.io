@@ -1,0 +1,30 @@
+//**
+// Heropage
+//**
+html {
+  font-size: 100%;
+  height: 100%;
+}
+body {
+  text-align: center;
+  color: white;
+  background-image: url('../img/Colorful-Dog.jpg');
+  background-position: center center;
+  @include background-size(cover);
+}
+
+header {
+  text-align: left;
+}
+
+// Responsive styles if needed
+// @include responsive($big-break) {
+// }
+// @include responsive($small-break) {
+// }
+
+// Mobile first styles if needed
+// @include mobilefirst($big-break) {
+// }
+// @include mobilefirst($small-break) {
+// }
