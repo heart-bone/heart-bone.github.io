@@ -8,3 +8,13 @@ nav {
     padding: 10px 30px;
   }
 }
+
+.logo {
+  width: 100%;
+  background-color: $inverse-text-color;
+  //opacity: 0.4;
+  position: fixed;
+  text-align: right;
+  top: 0px;
+  float: right;
+}

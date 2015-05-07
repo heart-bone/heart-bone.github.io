@@ -9,8 +9,8 @@ $padding: 40px; // Padding and margins
 $line-height: 44px; // Consistent height for buttons, inputs etc.
 
 // Responsive breakpoints
-$small-break: 480px;
-$big-break: 780px;
+$small-break: 370px;
+$big-break: 760px;
 
 // Better default colors
 // Cool
@@ -35,8 +35,7 @@ $grey:   #aaa;
 $black:  #111;
 
 // Project color variables
-//$primary-color: #1271db;
-$primary-color: #ffdc00;
+$primary-color: white; //#1271db;
 $secondary-color: #233e5b;
 $tertiary-color: #aaa;
 
@@ -47,5 +46,11 @@ $warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text
 
 // Fonts. Don't forget to change them in the html head as well!
-$primary-font-face: 'Ubuntu';
-$secondary-font-face: 'Oswald';
+//$primary-font-face: 'Ubuntu';
+//$secondary-font-face: 'Oswald';
+$primary-font-face: 'Roboto Slab';
+$secondary-font-face: 'Roboto Slab';
+
+$text-color: rgb(255, 248, 220);
+$inverse-text-color: complement($text-color);
+//rgb(220, 227, 255);//

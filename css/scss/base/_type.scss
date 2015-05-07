@@ -53,7 +53,7 @@ h3 {
   font-size: 1.625em;
   font-style: normal;
   font-weight: normal;
-  margin: 0 0 25px;
+  margin: 25px;
 }
 
 h4 {
@@ -71,7 +71,7 @@ h5 {
 }
 
 p {
-  margin: 0 0 $padding/2;
+  margin: $padding/2 0 $padding/2;
 }
 
 pre {
@@ -100,10 +100,11 @@ code {
 }
 
 a {
-  color: $primary-color;
-
+  //color: $primary-color;
+  text-decoration: none;
   &:hover,
   &:focus {
+    opacity: 0.5;
     text-decoration: none;
   }
 }
@@ -131,8 +132,57 @@ logo2 {
 }
 
 // Responsive styles if needed
-// @include responsive($big-break) {
-// }
+@include responsive($big-break) {
+  body {
+    font-size: 0.875em;
+    line-height: 1.2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.125em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  h4,
+  h5,
+  p,
+  ul,
+  ol {
+    font-size: 0.875em;
+  }
+
+  logo1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 300;
+    color: lightgrey;
+  }
+
+  logo2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: normal;
+    color: red;
+  }
+
+}
 @include responsive($small-break) {
   body {
     font-size: 0.875em;
