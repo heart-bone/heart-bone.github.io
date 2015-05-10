@@ -4,6 +4,7 @@
 
 // Default button
 .btn {
+  margin: $padding/2 0 $padding/2;
   @include border-radius($btn-br);
   background: transparent;
   border: 1px solid $primary-color;

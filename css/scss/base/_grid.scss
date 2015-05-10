@@ -28,7 +28,7 @@
 
 
 // Grid columns are stacked until the display size is greater than min-width
-@include mobilefirst($small-break) {
+@include mobilefirst($big-break) {
 
   $unit: 6.2056333%; // Width of each grid column unit
   $margin: 2.1277%; // Margin between the grid columns
