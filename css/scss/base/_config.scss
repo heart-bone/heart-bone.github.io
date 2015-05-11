@@ -34,29 +34,8 @@ $silver: #ddd;
 $grey:   #aaa;
 $black:  #111;
 
-// Project color variables
-$primary-color: $black; //#1271db;
-$secondary-color: #233e5b;
-$tertiary-color: #aaa;
-
 $danger-color: $red; // Bad color for errors, validation etc.
 $success-color: $green; // Good color for success etc.
 $info-color: $blue; // Good color for success etc.
 $warning-color: $orange; // Good color for success etc.
 $subtle-color: $grey; // Subtle color for subtle text
-
-// Fonts. Don't forget to change them in the html head as well!
-//$primary-font-face: 'Ubuntu';
-//$secondary-font-face: 'Oswald';
-$primary-font-face: 'Roboto Slab';
-$secondary-font-face: 'Roboto Slab';
-
-$text-color: rgb(255, 248, 220);
-$inverse-text-color: complement($text-color);
-//rgb(220, 227, 255);//
-
-$color1: #353535;
-$color2: #3c6e71;
-$color3: #ffffff;
-$color4: #d9d9d9;
-$color5: #284b63;

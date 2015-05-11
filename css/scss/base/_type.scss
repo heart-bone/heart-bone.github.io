@@ -2,9 +2,19 @@
 // Typography
 //**
 
+// Fonts. Don't forget to change them in the html head as well!
+$primary-font-family: 'Yeseva One';
+$primary-font-face: cursive;
+
+$secondary-font-family: 'Josefin Sans';
+$secondary-font-face: sans-serif;
+
+$text-font-family: $secondary-font-family;
+$text-font-face: $secondary-font-face;
+
 body {
-  //font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
+  color: $primary-color;
+  font-family: $text-font-family, $text-font-face;
   font-size: 100%;
   font-style: normal;
   font-weight: 300;
@@ -14,7 +24,7 @@ body {
 blockquote {
   border-left: 2px solid $primary-color;
   //font-family: Georgia, Times, "Times New Roman", serif;
-  font-family: 'Ubuntu', sans-serif;
+  //font-family: 'Ubuntu', sans-serif;
   font-size: 1.4em;
   font-style: italic;
   font-weight: medium;
@@ -25,13 +35,11 @@ blockquote {
 h1,
 h2,
 h3 {
-  //font-family: $primary-font-face, sans-serif;
-  font-family: 'Yeseva One', cursive;
+  font-family: $primary-font-family, $primary-font-face;
 }
 h4,
 h5 {
-  //font-family: $secondary-font-face, sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $secondary-font-family, $secondary-font-face;
 }
 
 h1 {
@@ -71,7 +79,7 @@ h5 {
 }
 
 p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: $secondary-font-family, $secondary-font-face;
   margin: $padding/2 0 $padding/2;
 }
 
@@ -111,22 +119,23 @@ a {
 }
 
 logo1 {
-  font-family: 'Oswald', sans-serif;
+  //font-family: 'Oswald', sans-serif;
   //font-size: 1.5em;
-  font-style: normal;
-  font-weight: 300;
-  text-transform: none;
+  //font-style: normal;
+  //font-weight: 300;
+  //text-transform: none;
   //margin-left: 25px;
   //margin-top: 25px;
   //margin-bottom: 25px;
-  color: lightgrey;
+  color: $color4;
 }
 
 logo2 {
-  font-family: 'Oswald', sans-serif;
+  //font-family: 'Oswald', sans-serif;
   //font-size: 1.5em;
-  font-style: normal;
-  font-weight: normal;
+  font-style: bold;
+  font-weight: 700;
+  text-transform: uppercase;
   //margin-right: 25px;
   //margin-top: 25px;
   //margin-bottom: 25px;
@@ -168,22 +177,6 @@ logo2 {
     font-size: 0.875em;
   }
 
-  logo1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.125em;
-    font-style: normal;
-    font-weight: 300;
-    color: lightgrey;
-  }
-
-  logo2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.125em;
-    font-style: normal;
-    font-weight: normal;
-    color: red;
-  }
-
 }
 @include responsive($small-break) {
   body {
@@ -216,22 +209,6 @@ logo2 {
   ul,
   ol {
     font-size: 0.875em;
-  }
-
-  logo1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.125em;
-    font-style: normal;
-    font-weight: 300;
-    color: lightgrey;
-  }
-
-  logo2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.125em;
-    font-style: normal;
-    font-weight: normal;
-    color: red;
   }
 
 }
