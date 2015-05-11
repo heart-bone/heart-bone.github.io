@@ -1,6 +1,6 @@
 localhost:2015
 gzip
-log access.log
+# log access.log
 header /css {
     Cache-Control  max-age=86400
     Vary: Accept-Encoding
